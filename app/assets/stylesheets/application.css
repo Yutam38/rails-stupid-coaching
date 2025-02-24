@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+
+h1 {
+  text-align: center;
+  font-family: italic;
+
+}
+.questionCard {
+  border:  1px solid;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(255, 76, 76);
+  width: 700px;
+}
+
+.answerCard {
+  border: 1px solid;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(130, 255, 103);
+  width: 700px;
+}
+
+.backButton {
+  margin: 0 auto;
+  border:  1px solid;
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+  background-color: rgb(198, 159, 255);
+}
+
+.textColor {
+  color: rgb(245, 255, 192);
+}
+
+.marquee {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content; /* 内容に応じた幅 */
+  animation: marquee 7s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+  padding-right: 1rem; /* 文字間隔 */
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-10%); } /* 50% ずつ動かしてループ */
+}
+
+.marqueeYellow {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: bold;
+  color: #8ac100;
+  white-space: nowrap;
+}
+
+.marqueeYellow span {
+  display: inline-block;
+  padding-left: 200%;
+  animation: marqueeYellow 10s linear infinite;
+}
+
+@keyframes marqueeYellow {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}

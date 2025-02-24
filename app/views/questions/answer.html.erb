@@ -1,0 +1,20 @@
+<div class="d-flex flex-column justify-content-center align-items-center vh-100">
+<div class="marqueeYellow">
+    <span>Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer</span>
+  </div>
+<h1 class="answerTitle">Stupid Coaching</h1>
+<div class="questionCard">
+<p><strong><%= params[:question] %></strong></p>
+<p>-You</p>
+</div>
+
+<div class="answerCard">
+<p><strong><%= @answer %></strong></p>
+<p>-Your coach</p>
+</div>
+
+<div class="backButton">
+
+<%= link_to 'Ask a new question', ask_path, class:"textColor" %>
+</div>
+</div>
